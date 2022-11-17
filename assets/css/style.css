@@ -7,11 +7,13 @@
 a {
   color: #ffffff;
   text-decoration: none;
+  margin-left: 25px;
 }
 
 a:hover {
   color: beige;
   text-decoration: underline;
+
 }
 
 p {
@@ -29,6 +31,9 @@ header {
     "Lucida Sans", Arial, sans-serif;
   background-color: #2a607c;
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  min-width: 600px;
 }
 
 header h1 {
@@ -40,53 +45,56 @@ header h1 #seo {
   color: #d9dcd6;
 }
 
-header nav {
+nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
+  display: flex;
 }
 
-header ul {
-  list-style-type: none;
-}
 
-header li {
-  display: inline-block;
-  margin-left: 25px;
-}
-
-/* top banner image */
+/* Top Banner image */
 .top_img {
-  height: 800px;
   width: 100%;
+  min-width: 600px;
   margin-bottom: 25px;
   background-size: cover;
   background-position: center;
 }
 
-/* main content */
-.content {
+/* Main content */
+
+main {
+  display: flex;
+}
+
+/* Left main */
+.description {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
+  margin-right: 20px;
+  min-width: 560px;
+}
+
+.description img,
+h2 {
+  max-height: 200px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .content_box {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  /* height: 300px; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
   color: #ffffff;
-}
+  display: flex;
 
-.content img,
-h2 {
-  max-height: 200px;
-  margin-bottom: 20px;
-  font-size: 36px;
 }
 
 .float-left {
@@ -109,6 +117,7 @@ aside {
   height: 100%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #2589bd;
+
 }
 
 .benefit {
@@ -127,6 +136,7 @@ aside {
   max-width: 150px;
 }
 
+
 /* bottom side */
 footer {
   padding: 30px;
@@ -138,4 +148,48 @@ footer {
 
 footer h2 {
   font-size: 20px;
+}
+
+
+/* When width size is less than 1030px */
+@media screen and (max-width: 1030px) {
+  nav {
+    flex-direction: column;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  aside {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    min-width: 560px;
+  }
+}
+
+/* When width size is less than 720px */
+@media screen and (max-width: 720px) {
+  .content_box {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+
+  #bottom1 {
+    margin-top: 30px;
+  }
+
 }
