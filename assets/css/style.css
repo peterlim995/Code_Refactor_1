@@ -80,11 +80,12 @@ main {
 }
 
 .description img,
-h2 {
+.description h2 {
   max-height: 200px;
-  margin-bottom: 20px;
   font-size: 36px;
+  margin-bottom: 20px;    
 }
+
 
 .content_box {
   margin-bottom: 20px;
@@ -184,6 +185,12 @@ footer h2 {
     flex-wrap: wrap;
     align-items: center;
 
+  }
+  .content_box h2,
+  .content_box img {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #bottom1 {
