@@ -153,12 +153,10 @@ footer h2 {
 
 /* When width size is less than 1030px */
 @media screen and (max-width: 1030px) {
-  nav {
-    flex-direction: column;
-  }
-
+ 
   header {
     align-items: center;
+    flex-direction: column;
   }
 
   main {

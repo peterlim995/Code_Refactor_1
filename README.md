@@ -2,13 +2,19 @@
 
 ## Description
 
-Refector an existing site to make it more accessible. 
+Refector an existing site to make it more accessible 
 
-## Installation
 
-N/A
+## Deployed Link
 
-## Usage
+https://peterlim995.github.io/Code_Refactor_1/
+
+
+## Screen Shot
+
+![](./assets/images/01-html-css-git-homework-demo.png)
+
+## Acceptance Criteria
 
 * GIVEN a webpage meets accessibility standards
 * WHEN I view the source code
@@ -22,10 +28,3 @@ N/A
 * WHEN I view the title element
 * THEN I find a concise, descriptive title
 
-## Credits
-
-N/A
-
-## License
-
-N/A
