@@ -56,9 +56,10 @@ nav {
 
 
 /* Top Banner image */
-.top_img {
+figure {
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  height: 800px;
   width: 100%;
-  min-width: 600px;
   margin-bottom: 25px;
   background-size: cover;
   background-position: center;
